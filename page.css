@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #ccc,#f39c12);
 }
 
 .navigation {
@@ -93,7 +93,8 @@ body {
 
 /* Mission Section */
 .mission {
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, #ccc,#f39c12);
+    padding: 50px 20px;
     padding: 50px 20px;
     text-align: center;
 }
@@ -114,7 +115,7 @@ body {
 
 /* Team Section */
 .team {
-    background-color: #ffffff;
+    background: linear-gradient(to right, #ccc,#f39c12);
     padding: 50px 20px;
     text-align: center;
 }
@@ -133,7 +134,8 @@ body {
 }
 
 .team-member {
-    background-color: #f4f4f4;
+  
+    background: linear-gradient(to left, #ccc,#f39c12);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -172,7 +174,7 @@ body {
 }
 
 .course-card {
-    background-color: white;
+    background: linear-gradient(to left, #ccc,#f39c12);
     border-radius: 8px;
     width: 300px;
     margin: 1rem;
