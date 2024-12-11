@@ -1,8 +1,16 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f39c12;;
+    background-color: #f39c12;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -24,168 +32,166 @@
     transform: scale(1.1);
     opacity: 0.8;
 }
+
+/* Presentation Section */
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background: linear-gradient(to top, #ccc,#faa927);
+}
+
+.presentation img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.text_area1 {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Contact & Sign Up Section */
 .contact_sign_up {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    border:2px solid hsla(240, 57%, 58%, 0.582);
-    padding:0.5rem;
-    border-radius: 1rem;
-    margin:1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    background: linear-gradient(to right, #ccc,#f39c12);
+
 }
 
 .contact-section, .signup-section {
-    flex: 1;
+    width: 100%;
     padding: 20px;
-    border:2px solid hsla(240, 57%, 58%, 0.582);
-    background-color: #f4f4f4; /* Light background color */
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    background: linear-gradient(to left, #ccc,#f39c12);
 }
 
-.contact-section {
-    background-color: #e0f7fa; /* Light blue background for Contact Us */
+.contact-section:hover, .signup-section:hover {
+    transform: translateY(-5px);
 }
 
-.signup-section {
-    background-color: #e8f5e9; /* Light green background for Sign Up */
+.section-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    margin: 0 auto; 
+    display: block; 
+    object-fit: cover; 
+    margin-bottom: 10px;
 }
 
-.contact-form, .signup-form {
-    display: flex;
-    flex-direction: column;
+.section-image-small {
+    width: 80px; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
 }
+
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+   
 }
 
-input, textarea, button {
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
     width: 70%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-input {
-    width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 25rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
     -webkit-border-radius: 25rem;
     -moz-border-radius: 25rem;
     -ms-border-radius: 25rem;
     -o-border-radius: 25rem;
 }
-h2{
-    align-items:center;
-    justify-content:center;
-    border-radius: 25rem;  
-    text-align:center;
+
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-color: #007BFF; 
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.3); 
 }
 
-
+/* Styles for submit button */
 .submit-btn {
-    background-color: #007BFF; /* Primary color for buttons */
-    color: white;
-    border: none;
-    cursor: pointer;
     width: 50%;
+    padding: 14px;
+    display:block;
     align-items:center;
+    background-color: whitesmoke;
+    color:  #f39c12;
+    border: none;
     justify-content:center;
-    border-radius: 25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
 }
-
 .submit-btn:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
-}
-.presentation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    gap: 20px; /* Add spacing between image and text area */
-    padding: 20px;
+    background-color: #f39c12; 
+    color:whitesmoke;
 }
 
-.presentation img {
-    width: 30%; /* Set the width for images to take equal space */
-    height: auto; /* Ensure the image maintains its aspect ratio */
-    border: 2px solid transparent; /* Initial border style */
-    transition: border-color 0.3s ease-in-out; /* Smooth transition for border */
-}
 
-.presentation img:hover {
-    border-color: #007BFF; /* Border color on hover */
-}
-
-.text_area1 {
-    width: 60%; /* Adjust width for text area to match space taken by images */
-    padding: 20px;
-    text-align: left;
-}
-
-.text_area1 p {
-    margin: 0;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.presentation {
-    animation: fadeIn 1s ease-in-out;
-}
-@media (max-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        padding: 5px 10px;
-    }
-
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .contact_sign_up {
-        flex-direction: column;
-        gap: 10px;
-        padding: 1rem;
-    }
-
-    .contact-section, .signup-section {
-        padding: 15px;
-        margin: 0;
-    }
-
-    .contact-form, .signup-form {
-        width: 100%; /* Full width for inputs on small screens */
-    }
-
-    input, textarea, button {
-        width: 100%; /* Full width for inputs on small screens */
-    }
-
-    .presentation {
-        flex-direction: column;
-        text-align: center;
-    }
-
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
     .presentation img {
-        width: 80%; /* Adjust image width for small screens */
+        width: 45%;
     }
 
     .text_area1 {
-        width: 100%; /* Full width for text area on small screens */
+        width: 45%;
+    }
+
+    .contact-sign-up {
+        flex-direction: row;
+    }
+
+    .contact-section, .signup-section {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .presentation {
+        flex-direction: column;
+    }
+
+    .presentation img {
+        width: 100%;
+    }
+
+    .text_area1 {
+        width: 100%;
+    }
+
+    .contact-sign-up {
+        flex-direction: column;
+    }
+
+    .contact-section, .signup-section {
+        width: 100%;
     }
 }
