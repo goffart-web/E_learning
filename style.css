@@ -27,12 +27,21 @@
 .contact_sign_up {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Add some gap between the sections */
+    gap: 20px;
+    border:2px solid hsla(240, 57%, 58%, 0.582);
+    padding:0.5rem;
+    border-radius: 1rem;
+    margin:1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 .contact-section, .signup-section {
     flex: 1;
     padding: 20px;
+    border:2px solid hsla(240, 57%, 58%, 0.582);
     background-color: #f4f4f4; /* Light background color */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
@@ -56,7 +65,7 @@
 }
 
 input, textarea, button {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -70,6 +79,12 @@ input {
     -moz-border-radius: 25rem;
     -ms-border-radius: 25rem;
     -o-border-radius: 25rem;
+}
+h2{
+    align-items:center;
+    justify-content:center;
+    border-radius: 25rem;  
+    text-align:center;
 }
 
 
@@ -92,13 +107,85 @@ input {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    gap: 20px; /* Add spacing between image and text area */
+    padding: 20px;
 }
 
 .presentation img {
     width: 30%; /* Set the width for images to take equal space */
     height: auto; /* Ensure the image maintains its aspect ratio */
+    border: 2px solid transparent; /* Initial border style */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for border */
+}
+
+.presentation img:hover {
+    border-color: #007BFF; /* Border color on hover */
 }
 
 .text_area1 {
-    width: 80%; /* Center text with equal width to the space taken by the images */
+    width: 60%; /* Adjust width for text area to match space taken by images */
+    padding: 20px;
+    text-align: left;
+}
+
+.text_area1 p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presentation {
+    animation: fadeIn 1s ease-in-out;
+}
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        padding: 5px 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact_sign_up {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem;
+    }
+
+    .contact-section, .signup-section {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .contact-form, .signup-form {
+        width: 100%; /* Full width for inputs on small screens */
+    }
+
+    input, textarea, button {
+        width: 100%; /* Full width for inputs on small screens */
+    }
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentation img {
+        width: 80%; /* Adjust image width for small screens */
+    }
+
+    .text_area1 {
+        width: 100%; /* Full width for text area on small screens */
+    }
 }
