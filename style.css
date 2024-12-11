@@ -1,11 +1,11 @@
-/* General Reset */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(to top, #ccc,#faa927);
 }
-
 .navigation {
     display: flex;
     justify-content: space-around;
@@ -32,8 +32,6 @@ body {
     transform: scale(1.1);
     opacity: 0.8;
 }
-
-/* Presentation Section */
 .presentation {
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +56,6 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-
-/* Contact & Sign Up Section */
 .contact_sign_up {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +64,6 @@ body {
     background: linear-gradient(to right, #ccc,#f39c12);
 
 }
-
 .contact-section, .signup-section {
     width: 100%;
     padding: 20px;
@@ -79,11 +74,9 @@ body {
     margin-bottom: 20px;
     background: linear-gradient(to left, #ccc,#f39c12);
 }
-
 .contact-section:hover, .signup-section:hover {
     transform: translateY(-5px);
 }
-
 .section-image {
     width: 100px; 
     height: 100px; 
@@ -93,20 +86,216 @@ body {
     object-fit: cover; 
     margin-bottom: 10px;
 }
-
 .section-image-small {
     width: 80px; 
     border-radius: 8px; 
     margin-bottom: 20px;
 }
-
-
 .form-group {
     margin-bottom: 20px;
    
 }
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.course-card {
+    background: linear-gradient(to left, #ccc,#f39c12);
+    border-radius: 8px;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+}
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.course-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+.course-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.course-info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
 
+.enroll-btn {
+    text-decoration: none;
+    background-color:#f39c12;;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 
+.enroll-btn:hover {
+    background-color: #45a049;
+}
+features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+.feature {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.mission {
+    background: linear-gradient(to right, #ccc,#f39c12);
+    padding: 50px 20px;
+    padding: 50px 20px;
+    text-align: center;
+}
+.mission h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.mission p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.team {
+    background: linear-gradient(to right, #ccc,#f39c12);
+    padding: 50px 20px;
+    text-align: center;
+}
+.team h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+.team-member {
+    background: linear-gradient(to left, #ccc,#f39c12);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0 10px;
+}
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+    padding: 0 15px 15px;
+}
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.course-card {
+    background: linear-gradient(to left, #ccc,#f39c12);
+    border-radius: 8px;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+}
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.course-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+.course-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.course-info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
 input[type="text"], 
 input[type="email"], 
 input[type="password"] {
@@ -121,16 +310,12 @@ input[type="password"] {
     -ms-border-radius: 25rem;
     -o-border-radius: 25rem;
 }
-
-
 input[type="text"]:focus, 
 input[type="email"]:focus, 
 input[type="password"]:focus {
     border-color: #007BFF; 
     box-shadow: 0 0 12px rgba(0, 123, 255, 0.3); 
 }
-
-/* Styles for submit button */
 .submit-btn {
     width: 50%;
     padding: 14px;
@@ -153,9 +338,6 @@ input[type="password"]:focus {
     background-color: #f39c12; 
     color:whitesmoke;
 }
-
-
-/* Media Queries for Responsive Design */
 @media (min-width: 768px) {
     .presentation img {
         width: 45%;
