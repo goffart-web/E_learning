@@ -33,7 +33,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #ccc,#f39c12);
     color: #333;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .course-card {
-    background-color: white;
+    background: linear-gradient(to left, #ccc,#f39c12);
     border-radius: 8px;
     width: 300px;
     margin: 1rem;
