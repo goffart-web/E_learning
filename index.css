@@ -1,198 +1,204 @@
-/* General Reset */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Navigation Styles */
 .navigation {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
-    padding: 15px 0;
+    align-items: center;
+    background-color: #f39c12;;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .nav {
-    text-align: center;
-    flex-grow: 1;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    transition: filter 0.3s ease;
-}
-
-.nav a:hover .icon {
-    filter: brightness(0.8);
-}
-
-/* Logos Section */
-.logos {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.logo1, .logo2 {
-    display: inline-block;
-    margin: 20px;
-    transition: transform 0.3s ease;
-}
-
-.logo1 img, .logo2 img {
-    width: 60px;
-    height: 60px;
-    filter: grayscale(80%);
-    transition: filter 0.3s ease;
-}
-
-.logo1:hover img, .logo2:hover img {
-    filter: grayscale(0%);
-}
-
-/* Text areas */
-.text_area2 {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-.text_area1 {
-    max-width: 500px;
-    font-size: 1.2rem;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Image Section */
-.image1 {
     display: flex;
     justify-content: center;
-    gap: 20px;
     align-items: center;
-    margin: 40px 0;
-    transition: transform 0.5s ease-in-out;
 }
-
-.image1 img {
-    width: 50%;
-    border-radius: 8px;
+.nav a {
+    text-decoration: none;
 }
-
-.image1:hover {
-    transform: scale(1.05);
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-/* Buttons */
-.start-btn, .submit-btn {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
-
-.start-btn:hover, .submit-btn:hover {
-    background-color: #0056b3;
-}
-
-/* Contact Section */
-.main-container {
+.contact_sign_up {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    border:2px solid hsla(240, 57%, 58%, 0.582);
+    padding:0.5rem;
+    border-radius: 1rem;
+    margin:1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+contact-section .section-image, .signup-section .section-image {
+    width: 100px; /* Reduced width of the image */
+    height: 100px; /* Reduced height of the image */
+    object-fit: cover; 
+    border-radius: 50%; /* Make the image circular */
+    display: block; /* Ensures block display for centering */
+    margin-bottom: 10px; /* Add some spacing below the image */
 }
 
 .contact-section, .signup-section {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    margin-bottom: 20px;
+    flex: 1;
+    padding: 20px;
+    border:2px solid hsla(240, 57%, 58%, 0.582);
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
+.contact-section {
+    background-color: #e0f7fa; /* Light blue background for Contact Us */
+}
+
+.signup-section {
+    background-color: #e8f5e9; /* Light green background for Sign Up */
+}
+
+.contact-form, .signup-form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+input, textarea, button {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25rem;
+    -webkit-border-radius: 25rem;
+    -moz-border-radius: 25rem;
+    -ms-border-radius: 25rem;
+    -o-border-radius: 25rem;
+}
+h2{
+    align-items:center;
+    justify-content:center;
+    border-radius: 25rem;  
+    text-align:center;
+}
+
+
+.submit-btn {
+    background-color: #007BFF; /* Primary color for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    align-items:center;
+    justify-content:center;
+    border-radius: 25rem;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px; /* Add spacing between image and text area */
+    padding: 20px;
+}
+
+.presentation img {
+    width: 30%;
+    height: auto;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.presentation img:hover {
+    border-color: #007BFF; 
+}
+
+.text_area1 {
+    width: 60%; /* Adjust width for text area to match space taken by images */
+    padding: 20px;
     text-align: left;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+.text_area1 p {
+    margin: 0;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-textarea {
-    resize: none;
+.presentation {
+    animation: fadeIn 1s ease-in-out;
 }
-
-input:focus, textarea:focus {
-    border-color: #007bff;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    .image1 {
+    .navigation {
         flex-direction: column;
-    }
-
-    .image1 img {
-        width: 100%;
-    }
-
-    .logos {
-        text-align: center;
+        padding: 5px 10px;
     }
 
     .nav {
-        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .main-container {
+    .contact_sign_up {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        padding: 1rem;
     }
 
     .contact-section, .signup-section {
-        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .contact-form, .signup-form {
+        width: 100%; /* Full width for inputs on small screens */
+    }
+
+    input, textarea, button {
+        width: 100%; /* Full width for inputs on small screens */
+    }
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentation img {
+        width: 80%; /* Adjust image width for small screens */
+    }
+
+    .text_area1 {
+        width: 100%; /* Full width for text area on small screens */
     }
 }
